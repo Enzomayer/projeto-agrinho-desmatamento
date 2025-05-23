@@ -20,32 +20,59 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        a.skip-link {
+            position: absolute;
+            left: -999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            z-index: 100;
+            background: #222;
+            color: #fff;
+            padding: 8px 16px;
+        }
+        a.skip-link:focus {
+            left: 10px;
+            top: 10px;
+            width: auto;
+            height: auto;
+        }
     </style>
 </head>
 <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+    <main id="conteudo-principal" tabindex="-1">
+        <h1>Relação entre Campo e Cidade</h1>
 
-    <h1>Relação entre Campo e Cidade</h1>
+        <section class="section" aria-labelledby="campo-title">
+            <h2 id="campo-title">Campo</h2>
+            <dl>
+                <dt>Característica</dt>
+                <dd>Produção agrícola</dd>
+                <dt>Contribuição</dt>
+                <dd>Fornece alimentos e matérias-primas para a cidade.</dd>
+            </dl>
+        </section>
 
-    <div class="section">
-        <h2>Campo</h2>
-        <p><strong>Característica:</strong> Produção agrícola</p>
-        <p><strong>Contribuição:</strong> Fornece alimentos e matérias-primas para a cidade.</p>
-    </div>
+        <section class="section" aria-labelledby="cidade-title">
+            <h2 id="cidade-title">Cidade</h2>
+            <dl>
+                <dt>Característica</dt>
+                <dd>Indústria e comércio</dd>
+                <dt>Contribuição</dt>
+                <dd>Processa produtos do campo e oferece serviços.</dd>
+            </dl>
+        </section>
 
-    <div class="section">
-        <h2>Cidade</h2>
-        <p><strong>Característica:</strong> Indústria e comércio</p>
-        <p><strong>Contribuição:</strong> Processa produtos do campo e oferece serviços.</p>
-    </div>
-
-    <div class="section">
-        <h2>Interações</h2>
-        <ul>
-            <li>O campo fornece recursos naturais para a cidade.</li>
-            <li>A cidade fornece produtos industrializados e serviços para o campo.</li>
-            <li>Migrações ocorrem entre campo e cidade em busca de melhores condições de vida.</li>
-        </ul>
-    </div>
-
+        <section class="section" aria-labelledby="interacoes-title">
+            <h2 id="interacoes-title">Interações</h2>
+            <ul>
+                <li>O campo fornece recursos naturais para a cidade.</li>
+                <li>A cidade fornece produtos industrializados e serviços para o campo.</li>
+                <li>Migrações ocorrem entre campo e cidade em busca de melhores condições de vida.</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
