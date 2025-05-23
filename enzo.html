@@ -20,6 +20,21 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        .image-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+        }
+        .caption {
+            font-size: 0.96em;
+            color: #555;
+            margin-top: 6px;
+        }
         a.skip-link {
             position: absolute;
             left: -999px;
@@ -44,9 +59,17 @@
     <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
     <main id="conteudo-principal" tabindex="-1">
         <h1>Relação entre Campo e Cidade</h1>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Campo e Agricultura">
+            <div class="caption">Campo: vastas plantações e natureza.</div>
+        </div>
 
         <section class="section" aria-labelledby="campo-title">
             <h2 id="campo-title">Campo</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80" alt="Plantação verde">
+                <div class="caption">Produção agrícola no campo.</div>
+            </div>
             <dl>
                 <dt>Característica</dt>
                 <dd>Produção agrícola</dd>
@@ -55,8 +78,28 @@
             </dl>
         </section>
 
+        <section class="section" aria-labelledby="transporte-title">
+            <h2 id="transporte-title">Transporte</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Caminhão transportando produtos">
+                <div class="caption">Caminhões transportando produtos do campo para a cidade.</div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="vegetais-title">
+            <h2 id="vegetais-title">Vegetais</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=800&q=80" alt="Vegetais frescos">
+                <div class="caption">Diversos vegetais frescos colhidos no campo.</div>
+            </div>
+        </section>
+
         <section class="section" aria-labelledby="cidade-title">
             <h2 id="cidade-title">Cidade</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1508051123996-69f8caf4891c?auto=format&fit=crop&w=800&q=80" alt="Vista da cidade">
+                <div class="caption">Cidade: indústria, comércio e serviços.</div>
+            </div>
             <dl>
                 <dt>Característica</dt>
                 <dd>Indústria e comércio</dd>
@@ -67,10 +110,15 @@
 
         <section class="section" aria-labelledby="interacoes-title">
             <h2 id="interacoes-title">Interações</h2>
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Desmatamento">
+                <div class="caption">O desmatamento é um desafio que afeta campo e cidade.</div>
+            </div>
             <ul>
                 <li>O campo fornece recursos naturais para a cidade.</li>
                 <li>A cidade fornece produtos industrializados e serviços para o campo.</li>
                 <li>Migrações ocorrem entre campo e cidade em busca de melhores condições de vida.</li>
+                <li>O desmatamento impacta diretamente ambos os ambientes.</li>
             </ul>
         </section>
     </main>
