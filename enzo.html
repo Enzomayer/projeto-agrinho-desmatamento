@@ -1,49 +1,51 @@
-public class RelacaoCampoCidade {
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relação entre Campo e Cidade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .section {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
 
-    public static void main(String[] args) {
-        Campo campo = new Campo("Produção agrícola", "Fornece alimentos e matérias-primas para a cidade.");
-        Cidade cidade = new Cidade("Indústria e comércio", "Processa produtos do campo e oferece serviços.");
+    <h1>Relação entre Campo e Cidade</h1>
 
-        System.out.println("Relação entre Campo e Cidade:\n");
-        campo.exibirInformacoes();
-        cidade.exibirInformacoes();
+    <div class="section">
+        <h2>Campo</h2>
+        <p><strong>Característica:</strong> Produção agrícola</p>
+        <p><strong>Contribuição:</strong> Fornece alimentos e matérias-primas para a cidade.</p>
+    </div>
 
-        System.out.println("\nInterações:");
-        System.out.println("- O campo fornece recursos naturais para a cidade.");
-        System.out.println("- A cidade fornece produtos industrializados e serviços para o campo.");
-        System.out.println("- Migrações ocorrem entre campo e cidade em busca de melhores condições de vida.");
-    }
-}
+    <div class="section">
+        <h2>Cidade</h2>
+        <p><strong>Característica:</strong> Indústria e comércio</p>
+        <p><strong>Contribuição:</strong> Processa produtos do campo e oferece serviços.</p>
+    </div>
 
-class Campo {
-    private String caracteristica;
-    private String contribuicao;
+    <div class="section">
+        <h2>Interações</h2>
+        <ul>
+            <li>O campo fornece recursos naturais para a cidade.</li>
+            <li>A cidade fornece produtos industrializados e serviços para o campo.</li>
+            <li>Migrações ocorrem entre campo e cidade em busca de melhores condições de vida.</li>
+        </ul>
+    </div>
 
-    public Campo(String caracteristica, String contribuicao) {
-        this.caracteristica = caracteristica;
-        this.contribuicao = contribuicao;
-    }
-
-    public void exibirInformacoes() {
-        System.out.println("Campo:");
-        System.out.println("- Característica: " + caracteristica);
-        System.out.println("- Contribuição: " + contribuicao);
-    }
-}
-
-class Cidade {
-    private String caracteristica;
-    private String contribuicao;
-
-    public Cidade(String caracteristica, String contribuicao) {
-        this.caracteristica = caracteristica;
-        this.contribuicao = contribuicao;
-    }
-
-    public void exibirInformacoes() {
-        System.out.println("Cidade:");
-        System.out.println("- Característica: " + caracteristica);
-        System.out.println("- Contribuição: " + contribuicao);
-    }
-}
-
+</body>
+</html>
